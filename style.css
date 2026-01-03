@@ -1,57 +1,81 @@
-/* =========================
-   CONFIGURAÇÕES GERAIS
-   ========================= */
+/* =====================================================
+   CONFIGURAÇÕES GERAIS DO SITE
+   ===================================================== */
 
-/* Remove margens padrão e define fonte */
+/* Remove margens padrão, define fonte e base do layout */
 body {
   margin: 0;
-  padding-bottom: 140px; /* Espaço para o footer fixo */
+  padding-bottom: 140px;   /* Espaço reservado para o footer fixo */
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #f5f5f5;
+  background: #f5f5f5;     /* Fundo neutro (temporário) */
 }
 
-/* Estilo base dos "cards" */
+
+/* =====================================================
+   CARD BASE (usado em quase todas as seções)
+   ===================================================== */
+
+/* Estilo padrão de "card" */
 .card {
-  max-width: 900px;
-  margin: 25px auto;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 8px;
+  max-width: 900px;        /* Largura máxima do conteúdo */
+  margin: 25px auto;       /* Centraliza horizontalmente */
+  padding: 20px;           /* Espaçamento interno padrão */
+  background: #ffffff;     /* Fundo branco */
+  border-radius: 8px;      /* Cantos arredondados */
 }
 
-/* =========================
-   LOGO (CARD TITLE)
-   ========================= */
+
+/* =====================================================
+   CARD DO TÍTULO (LOGO)
+   ===================================================== */
+
+/* Card específico do topo
+   Usado APENAS onde está a logo */
+.card-title {
+  padding: 8px;            /* 🔥 Reduz altura do card */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: transparent; /* Remove fundo branco se quiser */
+}
 
 /* Logo centralizada no topo */
 .logo-top {
-  width: 320px;       /* 🔥 AUMENTE OU DIMINUA AQUI */
+  width: 320px;            /* 🔥 CONTROLE DO TAMANHO DA LOGO */
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* =========================
-   NAVEGAÇÃO
-   ========================= */
 
+/* =====================================================
+   NAVEGAÇÃO (MENU)
+   ===================================================== */
+
+/* Container da navegação */
 .nav-center {
   display: flex;
   justify-content: center;
-  gap: 30px;          /* Espaço entre os links */
+  gap: 30px;               /* Espaço entre os links */
 }
 
+/* Links do menu */
 .nav-center a {
   text-decoration: none;
   font-weight: bold;
-  color: #0a7cff;
+  color: #0a7cff;          /* Azul institucional */
 }
 
-/* =========================
-   BODY / CONTEÚDO
-   ========================= */
+/* Hover simples no menu */
+.nav-center a:hover {
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   BODY / CONTEÚDO PRINCIPAL
+   ===================================================== */
 
 .body-card h1 {
   font-size: 2.5rem;
@@ -64,13 +88,18 @@ body {
   margin-bottom: 20px;
 }
 
+/* Texto descritivo */
 .lead {
   max-width: 700px;
   margin: 0 auto 30px;
   line-height: 1.6;
 }
 
-/* Botão principal */
+
+/* =====================================================
+   BOTÃO PRINCIPAL
+   ===================================================== */
+
 .btn {
   display: inline-block;
   padding: 14px 28px;
@@ -81,9 +110,15 @@ body {
   font-weight: bold;
 }
 
-/* =========================
-   FOOTER FIXO
-   ========================= */
+/* Hover do botão */
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+/* =====================================================
+   FOOTER FIXO (BASEBOARD)
+   ===================================================== */
 
 .fixed-footer {
   position: fixed;
@@ -94,9 +129,10 @@ body {
   padding: 15px 10px;
 }
 
-/* =========================
-   REDES SOCIAIS (ÍCONES)
-   ========================= */
+
+/* =====================================================
+   REDES SOCIAIS (ÍCONES MODERNOS)
+   ===================================================== */
 
 .socials {
   display: flex;
@@ -105,13 +141,14 @@ body {
   margin-bottom: 8px;
 }
 
+/* Ícones */
 .socials a {
   color: #ffffff;
-  font-size: 1.4rem;   /* tamanho do ícone */
+  font-size: 1.4rem;       /* 🔥 Tamanho dos ícones */
   transition: transform 0.2s, color 0.2s;
 }
 
-/* Efeito hover */
+/* Efeito hover nos ícones */
 .socials a:hover {
   transform: scale(1.2);
   color: #0a7cff;
