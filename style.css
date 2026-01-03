@@ -94,17 +94,25 @@ body {
   padding: 15px 10px;
 }
 
-/* Área das redes sociais */
+/* =========================
+   REDES SOCIAIS (ÍCONES)
+   ========================= */
+
 .socials {
   display: flex;
   justify-content: center;
-  gap: 18px;
-  margin-bottom: 6px;
+  gap: 22px;
+  margin-bottom: 8px;
 }
 
-/* Links das redes */
 .socials a {
   color: #ffffff;
-  text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.4rem;   /* tamanho do ícone */
+  transition: transform 0.2s, color 0.2s;
+}
+
+/* Efeito hover */
+.socials a:hover {
+  transform: scale(1.2);
+  color: #0a7cff;
 }
